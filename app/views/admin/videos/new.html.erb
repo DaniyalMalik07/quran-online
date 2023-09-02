@@ -1,0 +1,30 @@
+<div class="container new-video-container">
+  <h1>Add a new video</h1>
+  <%= form_with(model: @admin_video) do |form| %>
+    <% if @admin_video.errors.any? %>
+      <div style="color: red">
+        <h2><%= pluralize(@admin_video.errors.count, "error") %> prohibited this admin_video from being saved:</h2>
+        <ul>
+          <% @admin_video.errors.each do |error| %>
+            <li><%= error.full_message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <div class="mb-3">
+      <%= form.label :title, style: "display: block", class: 'form-label' %>
+      <%= form.text_field :title, class: "form-control" %>
+    </div>
+    <div class="mb-3">
+      <%= form.label :video, style: "display: block", class: 'form-label' %>
+      <%= form.file_field :video, class: "form-control" %>
+    </div>
+    <div class="mb-3">
+      <%= form.submit class: "btn btn-primary" %>
+    </div>
+  <% end %>
+  <br>
+  <div>
+    <%= link_to "Back to videos", admin_videos_path, class: 'btn btn-warning' %>
+  </div>
+</div>

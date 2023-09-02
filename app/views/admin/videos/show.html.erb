@@ -1,0 +1,6 @@
+<p style="color: green"><%= notice %></p>
+<%= render @admin_video %>
+<div class="row">
+  <%= button_to "Back to videos", admin_videos_path, class: 'btn btn-secondary' %>
+  <%= button_to "Destroy this video", @admin_video, method: :delete, class: 'btn btn-danger' %>
+</div>
