@@ -10,3 +10,26 @@
   padding: 100px;
   margin-top: 40px;
 }
+
+.login-container{
+  width: 600px;
+}
+
+.login-page-logo{
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+
+.login-button{
+  margin-top: 30px;
+}
+
+.login-labels{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+
+.login-fields{
+  font-size: 25px;
+}
