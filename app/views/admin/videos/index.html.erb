@@ -1,14 +1,15 @@
 <p style="color: green"><%= notice %></p>
+<div class="main-container">
+  <h1>Videos</h1>
 
-<h1>Videos</h1>
+  <div id="admin_videos">
+    <% @admin_videos.each do |admin_video| %>
+      <%= render admin_video %>
+      <p>
+        <%= link_to "Show this video", admin_video %>
+      </p>
+    <% end %>
+  </div>
 
-<div id="admin_videos">
-  <% @admin_videos.each do |admin_video| %>
-    <%= render admin_video %>
-    <p>
-      <%= link_to "Show this video", admin_video %>
-    </p>
-  <% end %>
+  <%= link_to "New video", new_admin_video_path %>
 </div>
-
-<%= link_to "New video", new_admin_video_path %>

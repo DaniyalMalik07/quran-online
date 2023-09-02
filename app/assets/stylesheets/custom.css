@@ -2,6 +2,10 @@
   background-color: blue;
 }
 
+.main-container{
+  padding: 100px;
+}
+
 .new-video-container{
   padding: 100px;
   margin-top: 40px;
