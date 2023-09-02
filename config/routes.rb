@@ -1,6 +1,9 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  namespace :admin do
+    resources :videos, except: %i[edit update]
+  end
   devise_for :users
   root to: 'page#home'
   get 'page/contact'

@@ -1,0 +1,27 @@
+<%= form_with(model: admin_video) do |form| %>
+  <% if admin_video.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(admin_video.errors.count, "error") %> prohibited this admin_video from being saved:</h2>
+
+      <ul>
+        <% admin_video.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :video, style: "display: block" %>
+    <%= form.file_field :video %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
