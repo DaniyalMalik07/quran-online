@@ -12,7 +12,9 @@
   </head>
 
   <body>
-    <%= render "layouts/navbar" %>
+    <% unless controller_name == 'sessions' %>
+      <%= render "layouts/navbar" %>
+    <% end %>
     <%
 =begin%>
  <p class="notice"><%= notice %></p>

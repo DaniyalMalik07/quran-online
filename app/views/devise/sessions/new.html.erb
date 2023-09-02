@@ -1,0 +1,25 @@
+<div class='container'>
+  <div class="row justify-content-center align-items-center">
+    <div class="login-container">
+      <div class="text-center login-page-logo">
+        <%= image_tag('logo.png', alt: 'Image Alt Text', width: '290', height: '250') %>
+      </div>
+        <h2 class="text-center">Log in</h2>
+
+      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <div class="field">
+          <%= f.label :email, class: "form-label login-labels" %>
+          <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control login-fields' %>
+        </div>
+
+        <div class="field">
+          <%= f.label :password, class: "form-label login-labels" %>
+          <%= f.password_field :password, autocomplete: "current-password", class: 'form-control login-fields' %>
+        </div>
+        <div class="actions">
+          <%= f.submit "Log in", class: 'btn btn-info login-button' %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :videos, except: %i[edit update]
   end
-  devise_for :users
+  devise_for :users, skip: [:registration]
   root to: 'page#home'
   get 'page/contact'
   get 'page/about'
