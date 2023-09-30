@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <% @videos.each do |video| %>
+      <div class="col-md-4 videos-container">
+        <div class="card" style="width: 18rem;">
+          <div class="video-container">
+            <%= video_tag url_for(video.video), class: "video" %>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title"><%= video.title %></h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <%= link_to "Watch Now", video_path(video), class: 'btn btn-primary'  %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
