@@ -1,2 +1,14 @@
-<h1>Page#contact</h1>
-<p>Find me in app/views/page/contact.html.erb</p>
+<div class="container mt-5 login-container">
+  <h2>Contact Me</h2>
+  <form action="/send_message" method="post">
+    <div class="mb-3">
+      <label for="whatsappNumber" class="form-label">WhatsApp Number</label>
+      <input type="text" class="form-control" id="whatsappNumber" name="whatsappNumber" required>
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Message</label>
+      <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Send Message</button>
+  </form>
+</div>

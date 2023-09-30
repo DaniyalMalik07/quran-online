@@ -15,12 +15,6 @@
     <% unless controller_name == 'sessions' %>
       <%= render "layouts/navbar" %>
     <% end %>
-    <%
-=begin%>
- <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p> 
-<%
-=end%>
     <%= yield %>
   </body>
 </html>
