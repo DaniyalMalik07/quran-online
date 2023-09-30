@@ -17,7 +17,9 @@
           <%= f.password_field :password, autocomplete: "current-password", class: 'form-control login-fields' %>
         </div>
         <div class="actions">
-          <%= f.submit "Log in", class: 'btn btn-info login-button' %>
+          <%= f.submit class: 'btn btn-info login-button' do %>
+            <i class="bi bi-box-arrow-in-right"></i> Login
+          <% end %>
         </div>
       <% end %>
     </div>
