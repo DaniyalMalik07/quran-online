@@ -55,3 +55,11 @@
 .videos-container{
   margin-top: 40px;
 }
+
+.navbar-list{
+  font-size: 25px;
+}
+
+.navbar-link{
+  margin: 20px;
+}
