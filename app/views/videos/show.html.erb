@@ -1,2 +1,8 @@
-<h1>Videos#show</h1>
-<p>Find me in app/views/videos/show.html.erb</p>
+<div class="row">
+  <div class="col-md-6">
+    <div class="container user-video-container">
+      <%= video_tag url_for(@video.video), controls: true, width: "100%", height: 500, class: 'user-video-container' %>
+      <h3><%= @video.title %></h1>
+    </div>
+  </div>
+</div>
