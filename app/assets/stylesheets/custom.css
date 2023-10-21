@@ -67,3 +67,11 @@
 .user-video-container{
   margin: 40px;
 }
+
+.card-container{
+  margin-top: 50px;
+}
+
+.card-styling {
+  width: 25rem; height: 50rem; border: 10px solid green; border-radius: 20px;
+}
