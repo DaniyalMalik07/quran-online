@@ -67,3 +67,54 @@
 .user-video-container{
   margin: 40px;
 }
+
+.card-container{
+  margin-top: 50px;
+}
+
+.card-styling {
+  width: 25rem; height: 50rem; border: 10px solid green; border-radius: 20px;
+}
+
+.about-class{
+  margin-top: 30px;
+  background-color: black;
+  font-size: 40px;
+}
+
+header {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.fluid-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background-image: url('../images/quran_background.jpg'); /* Replace with the actual path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-us-content {
+  text-align: justify;
+  color: #333; /* Set text color to contrast with the background */
+}
+
+.about-us-paragraph{
+  font-size: 25px;
+  margin: 20px;
+}
+
+.about-us-col{
+  margin: 10px;
+}
+
+.about-list{
+  font-size: 20px;
+}

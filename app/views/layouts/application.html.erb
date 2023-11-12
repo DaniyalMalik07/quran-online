@@ -16,5 +16,8 @@
       <%= render "layouts/navbar" %>
     <% end %>
     <%= yield %>
+    <% unless controller_name == 'sessions' %>
+      <%= render "layouts/footer" %>
+    <% end %>
   </body>
 </html>

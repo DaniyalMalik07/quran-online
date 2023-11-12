@@ -1,8 +1,21 @@
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div style="background-color: green; color: white; padding: 5px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h5><i class="bi bi-whatsapp"> Call Now + 92 300 951 0648</i></h5>
+      </div>
+      <div class="col-md-6" style="display: flex;">
+        <h4><a href="https://www.facebook.com" style="color: white; margin-right: 40px;"><i class="bi bi-facebook"></i></a></h4>
+        <h4><a href="https://www.youtube.com" style="color: white; margin-right: 40px;"><i class="bi bi-youtube"></i></a></h4>
+      </div>
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <%= link_to(root_path, class: 'navbar-brand') do %>
-      <%= image_tag('logo2.jpg', alt: 'Image Alt Text', width: '190', height: '150') %>
+      <%= image_tag('new_logo.png', alt: 'Image Alt Text', width: '190', height: '150') %>
     <% end %>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -21,7 +34,7 @@
         </li>
         <li class="nav-item">
           <%= link_to page_contact_path, class: 'nav-link active navbar-link' do %>
-            <i class="bi bi-person-rolodex"></i> Contact Me
+            <i class="bi bi-person-rolodex"></i> Contact Us
           <% end %>
         </li>
         <li class="nav-item">
