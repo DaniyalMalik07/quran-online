@@ -7,5 +7,6 @@ class VideosController < ApplicationController
 
   def show
     @video = Admin::Video.find_by(id: params[:id])
+    @related_videos = Admin::Video.where.not(id: @video.id).limit(10)
   end
 end
