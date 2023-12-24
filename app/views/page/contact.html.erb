@@ -1,16 +1,36 @@
-<div class="container mt-5 login-container">
+
+<div class="container my-5">
   <h2>Contact Us</h2>
-  <form action="/send_message" method="post">
+  <form id="contactForm" novalidate>
     <div class="mb-3">
-      <label for="whatsappNumber" class="form-label">WhatsApp Number</label>
-      <input type="text" class="form-control" id="whatsappNumber" name="whatsappNumber" required>
+      <label for="email" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+      <div class="invalid-feedback">
+        Please enter a valid email address.
+      </div>
     </div>
     <div class="mb-3">
       <label for="message" class="form-label">Message</label>
-      <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+      <textarea class="form-control" id="message" rows="3" required></textarea>
+      <div class="invalid-feedback">
+        Please enter a message.
+      </div>
     </div>
-    <button type="submit" class="btn btn-primary">
-      <i class="bi bi-envelope"></i> Send Message
-    </button>
+    <button type="button" class="btn btn-primary" onclick="sendEmail()">Send Message</button>
   </form>
 </div>
+
+<script>
+  function sendEmail() {
+    var form = document.getElementById('contactForm');
+    if (!form.checkValidity()) {
+      form.classList.add('was-validated');
+      return;
+    }
+
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+    var mailtoLink = 'mailto:' + email + '?subject=Contact Form Submission&body=' + encodeURIComponent(message);
+    window.location.href = mailtoLink;
+  }
+</script>
