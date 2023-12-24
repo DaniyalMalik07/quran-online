@@ -118,3 +118,107 @@ header {
 .about-list{
   font-size: 20px;
 }
+
+
+/* Default Styles */
+
+/* ... (previous styles) ... */
+
+/* Media Queries */
+
+/* Larger screens (desktops) */
+@media (min-width: 1200px) {
+  .main-container {
+    padding: 80px;
+  }
+
+  .new-video-container {
+    padding: 80px;
+    margin-top: 30px;
+  }
+
+  .login-container {
+    width: 800px;
+  }
+
+  .video-container {
+    margin-top: 60px;
+  }
+
+  .navbar-list {
+    font-size: 30px;
+  }
+
+  .card-styling {
+    width: 30rem;
+    height: 60rem;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .main-container {
+    padding: 60px;
+  }
+
+  .new-video-container {
+    padding: 60px;
+    margin-top: 20px;
+  }
+
+  .login-container {
+    width: 70%;
+  }
+
+  .login-page-logo {
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+
+  .navbar-list {
+    font-size: 20px;
+  }
+
+  .about-us-paragraph {
+    font-size: 20px;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 767px) {
+  .main-container,
+  .new-video-container {
+    padding: 40px;
+  }
+
+  .login-container {
+    width: 90%;
+  }
+
+  .login-page-logo {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .login-labels,
+  .login-fields,
+  .navbar-list {
+    font-size: 18px;
+  }
+
+  .video-container,
+  .user-video-container,
+  .card-container {
+    margin: 20px;
+  }
+
+  .card-styling {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-us-paragraph {
+    font-size: 18px;
+    margin: 10px;
+  }
+}
