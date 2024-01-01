@@ -1,40 +1,40 @@
-.myclass{
+.myclass {
   background-color: blue;
 }
 
-.main-container{
+.main-container {
   padding: 100px;
 }
 
-.new-video-container{
+.new-video-container {
   padding: 100px;
   margin-top: 40px;
 }
 
-.login-container{
+.login-container {
   width: 600px;
 }
 
-.login-page-logo{
+.login-page-logo {
   margin-top: 90px;
   margin-bottom: 50px;
 }
 
-.login-button{
+.login-button {
   margin-top: 30px;
 }
 
-.login-labels{
+.login-labels {
   margin-top: 15px;
   margin-bottom: 15px;
   font-size: 25px;
 }
 
-.login-fields{
+.login-fields {
   font-size: 25px;
 }
 
-.new-video-btn{
+.new-video-btn {
   margin-right: 20px;
 }
 
@@ -52,31 +52,38 @@
   height: 100%;
 }
 
-.videos-container{
+.videos-container {
   margin-top: 40px;
 }
 
-.navbar-list{
+.navbar-list {
   font-size: 25px;
 }
 
-.navbar-link{
+.navbar-link {
   margin: 20px;
 }
 
-.user-video-container{
+.user-video-container {
   margin: 40px;
 }
 
-.card-container{
+.card-container {
   margin-top: 50px;
 }
 
 .card-styling {
-  width: 25rem; height: 50rem; border: 10px solid green; border-radius: 20px;
+  width: 20rem;
+  height: 45rem;
+  border: 10px solid green;
+  border-radius: 20px;
 }
 
-.about-class{
+.card-styling p {
+  font-size: 1.1rem;
+}
+
+.about-class {
   margin-top: 30px;
   background-color: black;
   font-size: 40px;
@@ -95,7 +102,8 @@ header {
   margin: 0 auto;
   padding: 20px;
   box-sizing: border-box;
-  background-image: url('../images/quran_background.jpg'); /* Replace with the actual path to your image */
+  background-image: url('../images/quran_background.jpg');
+  /* Replace with the actual path to your image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -103,19 +111,20 @@ header {
 
 .about-us-content {
   text-align: justify;
-  color: #333; /* Set text color to contrast with the background */
+  color: #333;
+  /* Set text color to contrast with the background */
 }
 
-.about-us-paragraph{
+.about-us-paragraph {
   font-size: 25px;
   margin: 20px;
 }
 
-.about-us-col{
+.about-us-col {
   margin: 10px;
 }
 
-.about-list{
+.about-list {
   font-size: 20px;
 }
 
@@ -150,8 +159,8 @@ header {
   }
 
   .card-styling {
-    width: 30rem;
-    height: 60rem;
+    width: 23rem;
+    height: 49rem;
   }
 }
 
@@ -186,6 +195,7 @@ header {
 
 /* Small screens (phones) */
 @media (max-width: 767px) {
+
   .main-container,
   .new-video-container {
     padding: 40px;
