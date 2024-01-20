@@ -1,71 +1,67 @@
+</br>
+</br>
+</br>
 <footer class="text-center text-lg-start text-white" style="background-color: green">
-  <section class="d-flex justify-content-between p-4">
+  <section class="d-flex p-4">
     <div class="container text-center text-md-start mt-5">
-      <div class="row mt-3">
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 d-flex justify-content-center align-items-center">
+      <div class="row">
+        <div class="col-md-2 mb-4 align-items-center footer-img">
           <%= link_to(root_path, class: 'navbar-brand') do %>
-            <%= image_tag('new_logo.png', alt: 'Image Alt Text', width: '350', height: '250') %>
+            <%= image_tag('new_logo.png', style: 'object-fit: contain; width: 200px; height: 200px;') %>
           <% end %>
         </div>
-        <div class="col-md-2 col-lg-2 col-xl-2">
+        <div class="col-md-3 col-lg-3 col-xl-3 footer-col-1">
           <h6 class="text-uppercase fw-bold">Smart Online Quran Academy</h6>
           <hr
-              class="mb-4 mt-0 d-inline-block mx-auto"
-              style="width: 60px; background-color: #7c4dff; height: 2px"
+              class="mt-0 d-inline-block mx-auto footer-col-1-bar"
               />
-          <p class="footer-text">
+          <p class="footer-text boxed-text footer-col-1-cont">
             Our Quran Academy experience has taught us that online courses simply require a different type of approach to online Quran learning education.
           </p>
         </div>
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <div class="col-md-2 mb-4 footer-col-2">
           <h6 class="text-uppercase fw-bold">Useful links</h6>
           <hr
-              class="mb-4 mt-0 d-inline-block mx-auto"
-              style="width: 60px; background-color: #7c4dff; height: 2px"
+              class="mt-0 d-inline-block mx-auto footer-col-2-bar"
               />
-          <p>
-            <%= link_to root_path, class: 'nav-link active navbar-link' do %>
+          <p class=" footer-col-2-cont">
+            <%= link_to root_path, class: 'nav-link active' do %>
               <i class="bi bi-house-door"></i> Home
             <% end %>
           </p>
-          <p>
-            <%= link_to page_about_path, class: 'nav-link active navbar-link' do %>
+          <p class=" footer-col-2-cont">
+            <%= link_to page_about_path, class: 'nav-link active' do %>
               <i class="bi bi-file-person"></i> About
             <% end %>
           </p>
-          <p>
-            <%= link_to page_contact_path, class: 'nav-link active navbar-link' do %>
+          <p class=" footer-col-2-cont">
+            <%= link_to page_contact_path, class: 'nav-link active' do %>
               <i class="bi bi-person-rolodex"></i> Contact Us
             <% end %>
           </p>
-          <p>
-            <%= link_to videos_index_path, class: 'nav-link active navbar-link' do %>
+          <p class=" footer-col-2-cont">
+            <%= link_to videos_index_path, class: 'nav-link active' do %>
               <i class="bi bi-play-btn"></i> My Videos
             <% end %>
           </p>
         </div>
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <h6 class="text-uppercase fw-bold">Contact</h6>
+        <div class="col-md-4 mb-md-0 mb-4 footer-col-3">
+          <h6 class="text-uppercase fw-bold"><i class="bi bi-telephone-fill footer-col-3-icon"></i>Contact Us</h6>
           <hr
-            class="mb-4 mt-0 d-inline-block mx-auto"
-            style="width: 60px; background-color: #7c4dff; height: 2px"
+            class="mb-3 mt-0 d-inline-block mx-auto footer-col-3-bar"
             />
-          <p><i class="fas fa-home mr-3"></i> Lahore, Punjab, Pakistan</p>
-          <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
-          <p><i class="fas fa-phone mr-3"></i> + 92 300 951 0648</p>
-          <p><i class="fas fa-print mr-3"></i> + 92 317 403 9975</p>
+          <p><i class="bi bi-envelope mr-3"></i> info@example.com</p>
+          <p><i class="bi bi-geo mr-3"></i> Lahore, Punjab, Pakistan</p>
+          <p><i class="bi bi-phone mr-3"></i> + 92 300 951 0648</p>
+          <p><i class="bi bi-phone mr-3"></i> + 92 317 403 9975</p>
         </div>
       </div>
     </div>
   </section>
+  </br>
+  </br>
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
     © 2024 Copyright:
     <a class="text-white" href="https://mdbootstrap.com/">Smart-Online-Quran-Academy.com</a>
   </div>
 </footer>
-
-<style>
-  .footer-text {
-    font-size: 15px !important;
-  }
-</style>
