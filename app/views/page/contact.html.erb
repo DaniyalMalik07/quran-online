@@ -1,22 +1,36 @@
 
 <div class="container my-5">
-  <h2>Contact Us</h2>
+  <h2 class="contact-title">Contact Us</h2>
   <form id="contactForm" novalidate>
-    <div class="mb-3">
-      <label for="email" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
-      <div class="invalid-feedback">
-        Please enter a valid email address.
+    <div class="row">
+      <div class="col-md-6">
+        <div class="mb-3">
+          <strong>Male Tutor: </strong>
+          <span class="male-c">+ 92 300 951 0648</span>
+        </div>
+        <div class="mb-3">
+          <strong>Female Tutor: </strong>
+          <span class="female-c">+ 92 300 951 0648</span>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="mb-3 contact-div">
+          <label for="email" class="form-label"><strong>Email address: </strong></label>
+          <input type="email" class="form-control email-inp" id="email" placeholder="name@example.com" required>
+          <div class="invalid-feedback">
+            Please enter a valid email address.
+          </div>
+        </div>
+        <div class="mb-3 contact-div">
+          <label for="message" class="form-label"><strong>Message: </strong></label>
+          <textarea class="form-control msg-inp" id="message" rows="3" required></textarea>
+          <div class="invalid-feedback">
+            Please enter a message.
+          </div>
+        </div>
+        <button type="button" class="btn contact-btn" onclick="sendEmail()">Send Message</button>
       </div>
     </div>
-    <div class="mb-3">
-      <label for="message" class="form-label">Message</label>
-      <textarea class="form-control" id="message" rows="3" required></textarea>
-      <div class="invalid-feedback">
-        Please enter a message.
-      </div>
-    </div>
-    <button type="button" class="btn btn-primary" onclick="sendEmail()">Send Message</button>
   </form>
 </div>
 
